@@ -1,25 +1,56 @@
 body {
-    font-family: KaTeX_SansSerif;
+    font-family: "KaTeX_SansSerif", sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    line-height: 1.6;
+    color: #111;
+    background: white;
 }
-code, pre {
-    font-family: KaTeX_Typewriter;
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
 }
-.math {
-    font-family: KaTeX_Main;
+h2 {
+    font-size: 28px;
+    margin-top: 40px;
+}
+h3 {
+    font-size: 22px;
+}
+p {
+    font-size: 18px;
 }
 .navbar {
     display: flex;
     justify-content: center;
     gap: 35px;
     padding: 20px 0;
-    border-bottom: 1px solid #ddd;
-    font-family: "KaTeX_SansSerif", sans-serif;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
 }
 .navbar a {
     text-decoration: none;
-    color: #222;
+    color: #111;
     font-size: 18px;
 }
 .navbar a:hover {
     text-decoration: underline;
+}
+.navbar .active {
+    font-weight: bold;
+}
+a {
+    color: #003399;
+}
+.project {
+    border-left: 3px solid #222;
+    padding-left: 20px;
+    margin: 30px 0;
+}
+footer {
+    margin-top: 80px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
 }
