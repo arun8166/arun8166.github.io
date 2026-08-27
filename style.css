@@ -1,12 +1,25 @@
-
 body {
     font-family: KaTeX_SansSerif;
 }
-
 code, pre {
     font-family: KaTeX_Typewriter;
 }
-
 .math {
     font-family: KaTeX_Main;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    font-family: "KaTeX_SansSerif", sans-serif;
+}
+.navbar a {
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+}
+.navbar a:hover {
+    text-decoration: underline;
 }
