@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Research | Arun Duraisamy</title>
-<meta name="description" content="Research by Arun Duraisamy.">
+<meta name="description" content="Research by Arun Duraisamy: joint flow and diffusion models for DoA estimation.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -20,17 +20,16 @@
 <main>
   <h1>Research</h1>
 
-  <!-- EDIT: one block per topic. 2-3 sentences: the problem, what you did, what you found. -->
   <div class="project">
-    <h2>Research Topic 1</h2>
-    <p class="meta">with [Advisor], [Lab], [Year]</p>
-    <p>[Placeholder description.]</p>
-  </div>
-
-  <div class="project">
-    <h2>Research Topic 2</h2>
-    <p class="meta">with [Advisor], [Lab], [Year]</p>
-    <p>[Placeholder description.]</p>
+    <h2>Joint Flow &amp; Diffusion-based Framework for DoA Estimation</h2>
+    <p class="meta">WiSDOM Lab, IIT Kanpur &ndash; Aug 2025 to present</p>
+    <p>A joint MeanFlow&ndash;DDIM model (6.86M parameters) that estimates the directions of arrival of multiple targets from a single noisy, cluttered snapshot received by an antenna array with impairments.</p>
+    <ul>
+      <li>A conditional MeanFlow model generates multiple clean signal snapshots from each noisy observation.</li>
+      <li>A complex-valued Transformer encoder, using complex self-attention and antenna-correlation features, learns the spatial structure.</li>
+      <li>A Diffusion Transformer conditioned on both noisy and clean-signal embeddings draws posterior samples of the target angles.</li>
+      <li>Lower RMSE than conventional subspace methods and published CNN and diffusion-based baselines across SNR levels.</li>
+    </ul>
   </div>
 </main>
 

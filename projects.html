@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Projects | Arun Duraisamy</title>
-<meta name="description" content="Projects by Arun Duraisamy.">
+<meta name="description" content="Projects by Arun Duraisamy: a modular DSP engine, a safe building OS prototype and a custom MIPS-32 processor.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -20,19 +20,43 @@
 <main>
   <h1>Projects</h1>
 
-  <!-- EDIT: copy a block to add a project -->
+  <p>More on <a href="https://github.com/arun8166">GitHub</a>.</p>
+
+  <!-- To link a repo, add under a project:
+       <p class="links"><a href="https://github.com/arun8166/REPO">Code</a></p> -->
+
   <div class="project">
-    <h2>Project Name</h2>
-    <p>[Description of project.]</p>
-    <p class="tech">Python, PyTorch</p>
-    <p class="links"><a href="#">Code</a></p>
+    <h2>Modular DSP Engine for Audio Processing</h2>
+    <p class="meta">Personal project &ndash; Jun to Aug 2026</p>
+    <p>A modular DSP engine in C++ with configurable signal-processing graphs built from reusable DSP blocks.</p>
+    <ul>
+      <li>FIR/IIR filters, FFT-based spectral analysis, transfer functions and convolution modules for digital audio.</li>
+      <li>Multichannel audio buffers, parameter smoothing, module chaining and efficient memory management for real-time processing.</li>
+      <li>Extensible equalization, dynamic range, modulation, oscillator and envelope-based synthesis modules.</li>
+    </ul>
+    <p class="tech">C++</p>
   </div>
 
   <div class="project">
-    <h2>Another Project</h2>
-    <p>[Description of project.]</p>
-    <p class="tech">MATLAB</p>
-    <p class="links"><a href="#">Code</a> <a href="#">Report</a></p>
+    <h2>Safe Building OS Prototype</h2>
+    <p class="meta">CS637: Embedded and Cyber-Physical Systems &ndash; Aug to Oct 2025</p>
+    <p>Building-management middleware based on the paper <em>Playground: A Safe Building Operating System</em>. It mediates third-party control over core building infrastructure while keeping the building physically safe.</p>
+    <ul>
+      <li>A safety pipeline of pre-write guards and live telemetry monitors that blocks unsafe commands.</li>
+      <li>A multi-tenant App Steward that manages app lifecycles and isolates untrusted apps with per-instance API keys and rate limits.</li>
+      <li>An extension for safe policy rollouts, so administrators can test new safety rules on live traffic before enforcing them.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h2>Custom MIPS-32 Processor</h2>
+    <p class="meta">CS220: Intro. to Computer Organization &ndash; Mar to Apr 2025</p>
+    <p>A 32-bit single-cycle processor in Verilog implementing a subset of the MIPS-32 instruction set, with floating-point and custom instructions.</p>
+    <ul>
+      <li>Modular ALU, register file, control unit, instruction memory and data memory.</li>
+      <li>A Python instruction generator and Verilog testbenches that automate testing across modules.</li>
+    </ul>
+    <p class="tech">Verilog, Python</p>
   </div>
 </main>
 

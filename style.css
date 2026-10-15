@@ -222,21 +222,57 @@ code {
   margin-right: 16px;
 }
 
-/* ---------- Contact ---------- */
+/* ---------- Education / experience entries ---------- */
 
-.contact {
+.entry {
+  margin: 0 0 20px;
+}
+
+.entry-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0 16px;
+}
+
+.when {
+  color: var(--muted);
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.role {
+  margin: 0 0 6px;
+}
+
+.entry ul,
+.project ul {
+  margin: 6px 0 10px;
+  padding-left: 20px;
+}
+
+.entry li,
+.project li {
+  margin: 4px 0;
+}
+
+/* ---------- Label / value lists (skills, contact) ---------- */
+
+.kv {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.contact li {
+.kv li {
+  display: flex;
+  gap: 16px;
   margin: 8px 0;
 }
 
-.contact .label {
-  display: inline-block;
-  width: 80px;
+.kv .label {
+  flex: 0 0 90px;
   color: var(--muted);
 }
 
@@ -279,9 +315,13 @@ footer {
     height: 110px;
   }
 
-  .contact .label {
-    display: block;
-    width: auto;
+  .kv li {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .kv .label {
+    flex: none;
     font-size: 15px;
   }
 }
